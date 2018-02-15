@@ -1,0 +1,727 @@
+{% extends 'home/base.html'%}
+{% load staticfiles %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/events.css'%}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/page.css' %}">
+{% endblock %}
+{% block body %}<div class="page">
+  <div class="page__demo">
+    <section> 
+      <a href="#" data-activates="slide-out" class="button-collapse  right nav-btn"><i class="material-icons">dehaze</i></a>
+      <div class="grey darken-4 header"><h1 class="center heading">Events</h1>
+        <h3 class="center subheading">"Nothing worth winning comes easy...Nothing!"</h3></div>
+      </section>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <b>GENERAL RULES</b>
+          <ul style="list-style-type: circle">
+            <li>Teams must arrive at the ground 15 minutes before the scheduled start time.</li>
+            <li>Walkover will be given to a team if the opponent team is not able to reach the ground within 15 minutes of the scheduled time.</li>
+            <li>All teams must get their own kits and shall bear the responsibility of them.</li>
+            <li>Only captain (bowling team) and striker (batting team) can negotiate with umpires during the match in case of disputes and  discrepancies.</li>
+            <li>Points will be deducted for slow over-rate and sledging.</li>
+            <li>All game rules are pertaining to the recent ICC T20 rules.</li>
+            <li>An over rate of 1 over per 4 mins is to be maintained during the match. Penalties shall apply for slow over rates (refer ICC Code of Conduct).</li>
+            <li>No team shall argue with umpires in any case. It could lead to cancellation of team registration and no refunds will be given. It could also attract proper disciplinary actions against the team.</li>
+          </ul>
+
+          <b>FORMAT</b>
+          <ul style="list-style-type: circle">
+
+            <li>Group Stage and Semi-Finals – 12 Overs</li>
+            <li>Finals – 20 Overs</li>
+            <li>In case of heavy rain, decision taken by umpires will be considered as final.</li>
+            <li>One point will be added to both teams in case of a tie in group eliminations.</li>
+            <li>Points in group matches are considered in case of a tie in semi-finals.</li>
+            <li>Super over decides the winning team in case of a tie in finals.</li>
+          </ul>
+          <b>PARTICIPATION</b>
+          <ul style="list-style-type: circle">
+            <li>Maximum number of players allowed per team is 16.</li>
+            <li>Minimum of 13 players are required per team.</li>
+          </ul>
+          **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <b>  GENERAL RULES</b>
+          <ul style="list-style-type: circle">
+            <li>The game will be played according to the usual rules laid down by FIFA.</li>
+            <li>In case teams in a pool end up having same points then ranking will be done according to the goal difference of each team. If still ties exist, then top team is decided by total goals scored between the tied teams.</li>
+            <li>In case of a drawn match in semi – finals and finals, winner will be decided by penalty shootout (no extra time).</li>
+            <li>Referees’ decision is final.</li>
+            <li>Every team should be present at least 20 minutes before the scheduled starting time of the match, failing which a walkover will be given to the opposing team.</li>
+            <li>In case a team gets a walkover, it wins the match by a default 3-0 score, but in case it affects the qualification of other team, the decision will be taken by the event manager and penalties will be played after due consultation with the referees.</li>
+            <li>Each team will be allowed to make a maximum of 3 substitutions per match.</li>
+            <li>A player who receives a red card or two yellow cards in a match will be suspended for the ongoing match as well as next match.</li>
+            <li>A player who picks up yellow cards in two different match will be automatically suspended for the next match.</li>
+            <li>No yellow cards will be carried into the semi-final and (or) final.</li>
+            FOR BOYS
+          </ul>
+          <b>Format</b>
+          <ul style="list-style-type: circle">
+            <li>60 minutes game (30 minutes half)</li>
+            <li><li>3 teams per pool and top team from each pool will qualify</li>
+            Participation
+            <li>Maximum number of players allowed per team is 18. A minimum of 13 should register to participate.</li>
+            <li>There should be a minimum of 7 players to start the match, or for the match to continue. (if a team gets more than 4 red cards during a match, the opposing team will be declared winner)</li>
+          </ul>
+
+
+          **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+         <b> GENERAL RULES</b>
+         <ul style="list-style-type: circle">
+          <li>FIBA rules are applicable.</li>
+          <li>Teams must report to the basketball court 15 minutes before the scheduled start time, a win to opponent will be offered if failed to do so..</li>
+          <li>All the players of a team should have same coloured jersey with printed numbers. It is advisable to keep a jersey of a different colour available if the opposing team happens to have a jersey of same colour as your team..</li>
+          <li>Use of abusive of foul language during the play can lead to technical fouls or expulsion depending on the referee and the organisation team..</li>
+          <li>No player should wear anything on his/her hand or neck (wrist watch, necklace, ring, “kada”, bracelet, etc.) and nails have to be trimmed, so that players are not hurt during the game..</li>
+        </ul>
+        <b>FORMAT</b>
+        <ul style="list-style-type: circle">
+          <li>Boys - Matches will have normal 4 quarters with 10 minutes for each quarter (unless otherwise stated).</li>
+          <li>Girls - Matches will have normal 4 quarters with 7 minutes for each quarter (unless otherwise stated)..</li>
+        </ul>
+        <b>PARTICIPATION</b>
+        <ul style="list-style-type: circle">
+          <li>Maximum 12 players are allowed in a team.</li>
+          <li>No member of the team should be aged 25 years or more as on the first day of the tournament.</li>
+        </ul>
+        **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <b> GENERAL RULES</b>
+        <ul  style="list-style-type: circle">
+          <li>FIVB rules 2013 applicable.</li>
+          <li>Teams must report to the volleyball court 15 minutes before the scheduled start time, a win to opponent will be offered if failed to do so.</li>
+          <li>All the players of a team should have same coloured jersey with printed numbers. It is advisable to keep a jersey of a different colour available if the opposing team happens to have a jersey of same colour as your team.</li>
+          <li>Use of abusive of foul language during the play can lead to technical fouls or expulsion depending on the referee and the organisation team.</li>
+        </ul>
+        <b>FORMAT</b>
+        <ul  style="list-style-type: circle">
+          <li>Matches will have 3 sets, each set of 25 points and the final set being of 15 points (unless otherwise stated).</li>
+        </ul>
+        <b>PARTICIPATION </b>
+        <ul  style="list-style-type: circle">
+          <li>Maximum 12 players are allowed in a team.</li>
+          <li>No member of the team should be aged 25 years or more as on the first day of the tournament.</li>
+        </ul>
+        **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <b>GENERAL RULES </b>
+        <ul  style="list-style-type: circle">
+          <li>Matches will be conducted as per international rules.</li>
+          <li>Event Manager has the power to make some last moment changes if necessary.</li>
+          <li>Use of abusive of foul language during the play can lead to technical fouls or expulsion depending on the referee and the organisation team.</li>
+          <li>Teams must arrive at the court 20 minutes before the scheduled start time.</li>
+          <li>Walkover will be given to a team if the opponent team is not able to reach the ground within 15 minutes of the scheduled time.</li>
+        </ul>
+        <b>FORMAT </b>
+        <ul  style="list-style-type: circle">
+          <li>The Davis Cup format is followed with slight changes. (Three matches at Max)</li>
+          <li>There are 2 single rubbers and 1 double rubber. The double acts as the deciding rubber.</li>
+          <li>The team to win first 2 matches win.</li>
+          <li>There will be single set matches until semi-finals after which best of 3 settlers (Event Manager reserves the right to change the format)</li>
+        </ul>
+        <b>PARTICIPATION </b>
+        <ul  style="list-style-type: circle">
+          <li>Maximum of 1 team per college.</li>
+          <li>ABV-IIITM Gwalior can have maximum 2 teams, Team A & B.</li>
+        </ul>
+        <li>Each team must consist of a minimum of 2 and maximum of 4 players.</li>
+        **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+       <b>  GENERAL RULES</b>
+       <ul style="list-style-type: circle">
+        <li>All events will be played at ABV-IIITM’s swimming pool.</li>
+        <li>A warming-up session of 5 minutes will be given before the start of events.</li>
+        <li>Teams must arrive at the pool 20 minutes before the scheduled start time.</li>
+        <li>In the event of disputes, the decision of the referee is final and binding.</li>
+        <li>FINA rules will be followed.</li>
+        
+      </ul>
+      <b>FORMAT</b>
+      <ul>
+        <li>Four strokes: freestyle, backstroke, breaststroke, and butterfly will be organized.</li>
+        <li>Individual medley event and team relay event.</li>
+        <li>One team per institute is allowed.</li>
+      </ul>
+
+      **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+  <div id="modal8" class="modal">
+    <div class="modal-content">
+      <b> GENERAL RULES</b>
+      <ul  style="list-style-type: circle">
+        <li>Matches will be conducted as per standard ITTF rules and regulations.</li>
+        <li>Apart from the teams offbeat events such as singles, doubles and shuffle will be held depending on the time available.</li>
+        <li>Use of abusive of foul language during the play can lead to technical fouls or expulsion depending on the referee and the organisation team.</li>
+        <li>Teams must arrive in the TT room 20 minutes before the scheduled start time.
+          <li>Walkover will be given to a team if the opponent team is not able to reach the venue within 15 minutes of the scheduled time.</li>
+        </ul>
+        <b>FORMAT</b>
+        <ul  style="list-style-type: circle">
+          <li>Team matches will be held in ABC – XYZ format. There won’t be any doubles match in the team’s event. The order in which the matches will be held as follows:
+            Order Type  ABC team  XYZ team
+            1 Singles A X
+            2 Singles B Y
+            3 Singles C Z
+            4 Singles A Y
+            5 Singles B X
+          </li>
+          <li>Every individual match in the league stage will be best of 3 games with 11 points in every game. For the knockout stage the individual matches will be best of 5 games with 11 points in every game.</li>
+        </ul>
+        <b>PARTICIPATION</b>
+        <ul  style="list-style-type: circle">
+          <li>Each team must consist of a minimum of 3 and maximum of 5 players.</li>
+        </ul>
+        **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+    <div id="modal9" class="modal">
+      <div class="modal-content">
+        <b> GENERAL RULES</b>
+        <ul  style="list-style-type: circle">
+          <li>All games will be played by Dunlop Pro Double Dot Ball, the official ball for PSA.</li>
+          <li>Immediately preceding the start of play, a period not exceeding five minutes shall be allowed on court for the purpose of warming-up.</li>
+          <li>Teams must arrive at the court 20 minutes before the scheduled start time.</li>
+          <li>Walkover will be given to a team if the opponent team is not able to reach the ground within 15 minutes of the scheduled time.</li>
+          <li>Players must wear shoes with non-marking soles and the use of approved eye protection is mandatory.</li>
+          <li>In the event of disputes, the decision of the referee is final and binding.</li>
+        </ul>
+        <b>FORMAT </b>
+        <ul  style="list-style-type: circle">
+          <li>WSF rules will be followed.</li>
+          <li>A match between 2 teams would comprise of 5 games (4 singles + 1 doubles).</li>
+          
+        </ul>
+        <b>PARTICIPATION </b>
+        <ul  style="list-style-type: circle">
+          <li>Each team must consist of Minimum of 3 players & Maximum 5 players.</li>
+        </ul>
+        **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+    <div id="modal10" class="modal">
+      <div class="modal-content">
+       <b> GENERAL RULES </b>
+       <ul  style="list-style-type: circle">
+        <li>The participants will be made familiar with the rules before the start of the tournament by referee.</li>
+        <li>Any hand may be used in play. Participants can change hand during the game.</li>
+        <li>Use of Thumb/Back-Shot will not be allowed.</li>
+        
+        <li>Standard Carrom rules will be followed.</li>
+        <li>Rules with regard to equipment to be used:</li>
+        <li>Standard carrom board with stand, chair and light will be provided</li>
+        <li>Standard carrom men and powder will be provided</li>
+        <li>Although participant should bring his/her own striker.</li>
+        <li>Teams must arrive in the carrom room 15 minutes before the scheduled start time, a win to opponent will be offered if failed to do so.</li>
+      </ul>
+      <b>FORMAT </b>
+      <ul  style="list-style-type: circle">
+        <li>A game shall be of 25 points or eight boards. The player/team that reaches 25 points first or leads at the conclusion of eighth board shall be the winner of the game.</li>
+        <li>Best of three will be considered out of two singles and one doubles match played between any two teams.</li>
+      </ul>
+      <b>PARTICIPATION </b>
+      <ul  style="list-style-type: circle">
+        <li>Maximum of 2 teams per college.</li>
+        <li>Each team must consist of a minimum of 2 and maximum of 4 players.</li>
+        <li>An individual can participate in not more than one singles and one doubles match.</li>
+      </ul>
+      **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+  <div id="modal11" class="modal">
+    <div class="modal-content">
+     <b>  GENERAL RULES</b>
+     <ul style="list-style-type: circle">
+      <li>All players should come in proper kits (Shorts, T-Shirts, swimming suit)</li>
+      <li>The competition shall be conducted under the Indian Triathlon Federation Rules with slight modifications.</li>
+      <li>Use of abusive of foul language during the play can lead to technical fouls or expulsion depending on the referee and the organisation team.</li>
+      <li>In the event of disputes, the decision of the referee is final and binding.</li>
+      <li>The Organizing committee reserves the right to alternate scheduled program under unusual circumstances.</li>
+      
+    </ul>
+    <b>PARTICIPATION</b>
+    <ul>
+      <li>Maximum of two atheletes per institute will be allowed to participate in the event.</li>
+      <li>The order of execution of events will be swimming followed by cycling followed by running.</li>
+      <li>An athlete must complete all the previous events before moving on to the next event.</li>
+    </ul>
+
+    **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+<div id="modal12" class="modal">
+  <div class="modal-content">
+    <b>GENERAL RULES</b>
+    <ul style="list-style-type: circle">
+      <li>Standard FIDE Touch and Move rules are applicable.</li>
+      <li>For complete set of rules, please read the FIDE International Rulebook.</li>
+      <li>The boards and clocks will be provided at the tournament hall for the event.</li>
+      <li>Teams must arrive at the venue 15 minutes before the scheduled start time, a win to opponent will be offered if failed to do so.</li>
+    </ul>
+    <b>FORMAT </b>
+    <ul style="list-style-type: circle">
+      <li>Each player gets 1 point for a win, ½ point for a draw and 0 point for loss.</li>
+      <li>The total points of all the players will be added after the round to get the total points of the team.</li>
+      <li>The team with greater number of total points will be declared the winner in that round and be given 2 points; the losing team will get 0 points. In case of a tie, 1 point each will be given to both the teams.</li>
+      <li>Time Control: 90 minutes + Increment (Maybe changed by the arbiter before the event starts).</li>
+    </ul>
+    <b>PARTICIPATION </b>
+    <ul style="list-style-type: circle">
+      <li>Maximum of 2 teams per college. (Team A and Team B)</li>
+    </ul>
+    **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+<div id="modal13" class="modal">
+  <div class="modal-content">
+    <b>GENERAL RULES</b>
+    <ul style="list-style-type: circle">
+      <li>All players should come in proper kits (Shorts, T-Shirts)</li>
+      <li>Players should have clean shoes (Non Marking) and should be used only on the court. (Shoes should be changed only on arriving at the court)</li>
+      <li>All the rules apart from mentioned are according to the World Badminton Federation’s rule book</li>
+      <li>Use of abusive of foul language during the play can lead to technical fouls or expulsion depending on the referee and the organisation team.</li>
+      <li>Teams must arrive at the court 20 minutes before the scheduled start time.</li>
+      <li>Walkover will be given to a team if the opponent team is not able to reach the ground within 15 minutes of the scheduled time.</li>
+    </ul>
+    <b>FORMAT</b>
+    <ul style="list-style-type: circle">
+      <li>Each Clash (between teams) will have 5 matches for MEN and 3 matches for WOMEN
+        <b>ORDER:</b>
+        MEN – 1st singles, 2nd singles, 1st doubles, 3rd singles, 2nd doubles
+      WOMEN – 1st singles, 1st doubles, 2nd singles</li>
+    </ul>
+    <b>PARTICIPATION</b>
+    <ul style="list-style-type: circle">
+      <li>Maximum of 1 team per college</li>
+      <li>Each team must consist of a minimum of 4 and maximum of 5 players in a men’s team and a minimum of 2 and maximum of 4 players in a women’s team.</li>
+      <li>A player can play a maximum of two matches that is 1 singles and 1 doubles.</li>
+    </ul>
+    **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+<div id="modal14" class="modal">
+  <div class="modal-content">
+    <b>GENERAL RULES</b>
+    <ul style="list-style-type: circle">
+      <li>All players should come in proper kits (Shorts, T-Shirts)</li>
+      <li>﻿The competition shall be conducted under the International Athletics Federation Rules as adopted from time to time by AFI unless otherwise modified in these rules.</li>
+      <li>Use of abusive of foul language during the play can lead to technical fouls or expulsion depending on the referee and the organisation team.</li>
+      <li>Teams must arrive at the field 20 minutes before the scheduled start time.</li>
+      <li>The Organizing committee reserves the right to alternate scheduled program under unusual circumstances.</li>
+    </ul>
+
+    <b>PARTICIPATION</b>
+    <ul style="list-style-type: circle">
+      <li>Maximum of 1 team per college</li>
+      <li>Except for Relay races, each college is entitled to enter not more than two competitors. For relay races, not more than one entry of four with one reserve shall be accepted.</li>
+      <li>An athlete can participate in a maximum of two events, excluding relays and marathon.</li>
+    </ul>
+    **RULES & SCHEDULE ARE SUBJECT TO CHANGE IN THE SPIRIT OF THE GAME & FESTIVAL AND THE FINAL DECISION RESTS WITH THE TWARAN ORGANIZING TEAM
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+<section class="section">
+  <div class="main-container">
+    <header class="section__header">
+      <header class="section__header">
+        <h2 class="title title_xl section__title"></h2>
+        <span class="section__hint"></span>
+      </header>
+      <div class="section__content teamy-team">
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/cricket.jpg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Cricket</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal1" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/football.jpg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Football</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal2" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/lawn.jpg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Lawn Tennis</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal3" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/table.jpg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Table Tennis</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal4" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/squash.jpg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Squash</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal5" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/volley.jpg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Volleyball</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal6" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/baski.jpg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Basketball</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal7" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/baddy.jpg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Badminton</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal8" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/atheletics.jpg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Atheletics</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal9" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/triathon.jpeg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Triathlon</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal10" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/swimming.jpeg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Swimming</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal11" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/carrom.jpeg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Carrom</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal13" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="teamy teamy_style3 teamy_mask-circle teamy_zoom-photo">
+          <div class="teamy__layout">
+            <div class="teamy__preview">
+              <img src="{% static 'img/chess.jpeg' %}" class="teamy__avatar" alt="The demo photo">
+            </div>
+            <div class="teamy__back">
+              <div class="teamy__back-inner">
+                <div class="teamy__content">
+                  <h3 class="teamy__name">Chess</h3>
+                </div>
+                <div class="socials">
+                  <div><a class="waves-effect waves-light btn med white mbtn mbtn1 modal-trigger" href="#modal14" style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}"  style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+</div>
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Twaran 2K18</h5>
+        <p class="grey-text text-lighten-4">National Level Sports Fest Organised by ABV-IIITM Gwalior.. Twaran, Under the Flag of ABV-IIITM Gwalior offers a platform for students from all over India to exhibit their talent and compete with the best upcoming sport persons in the country..</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+                  <li><a class="grey-text text-lighten-3" href="{% static 'ins.pdf' %}">Instructions</a></li>
+                  <li><a class="grey-text text-lighten-3" href="{% static 'rule.pdf' %}">Rule Book</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/twaran.iiitm/">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2018 Copyright | Twaran
+      <a class="grey-text text-lighten-4 right" href="#!">ABV-IIITM Gwalior</a>
+    </div>
+  </div>
+</footer>
+</div>
+<svg width="26" height="28" style="display: none;">
+  <symbol id="twitter" viewBox="0 0 26 28">
+    <path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path>
+  </symbol>
+  <symbol id="codepen" viewBox="0 0 33 33">
+    <path d="M 17.996,32L 12,32 L 12,16 l-4,0 l0-5.514 l 4-0.002l-0.006-3.248C 11.993,2.737, 13.213,0, 18.512,0l 4.412,0 l0,5.515 l-2.757,0 c-2.063,0-2.163,0.77-2.163,2.209l-0.008,2.76l 4.959,0 l-0.585,5.514L 18,16L 17.996,32z"></path>
+  </symbol>
+  <symbol id="linkedin" viewBox="0 0 33 33">
+    <path d="M 17.471,2c0,0-6.28,0-8.373,0C 5.344,2, 1.811,4.844, 1.811,8.138c0,3.366, 2.559,6.083, 6.378,6.083 c 0.266,0, 0.524-0.005, 0.776-0.024c-0.248,0.475-0.425,1.009-0.425,1.564c0,0.936, 0.503,1.694, 1.14,2.313 c-0.481,0-0.945,0.014-1.452,0.014C 3.579,18.089,0,21.050,0,24.121c0,3.024, 3.923,4.916, 8.573,4.916 c 5.301,0, 8.228-3.008, 8.228-6.032c0-2.425-0.716-3.877-2.928-5.442c-0.757-0.536-2.204-1.839-2.204-2.604 c0-0.897, 0.256-1.34, 1.607-2.395c 1.385-1.082, 2.365-2.603, 2.365-4.372c0-2.106-0.938-4.159-2.699-4.837l 2.655,0 L 17.471,2z M 14.546,22.483c 0.066,0.28, 0.103,0.569, 0.103,0.863c0,2.444-1.575,4.353-6.093,4.353 c-3.214,0-5.535-2.034-5.535-4.478c0-2.395, 2.879-4.389, 6.093-4.354c 0.75,0.008, 1.449,0.129, 2.083,0.334 C 12.942,20.415, 14.193,21.101, 14.546,22.483z M 9.401,13.368c-2.157-0.065-4.207-2.413-4.58-5.246 c-0.372-2.833, 1.074-5.001, 3.231-4.937c 2.157,0.065, 4.207,2.338, 4.58,5.171 C 13.004,11.189, 11.557,13.433, 9.401,13.368zM 26,8L 26,2L 24,2L 24,8L 18,8L 18,10L 24,10L 24,16L 26,16L 26,10L 32,10L 32,8 z"></path>
+  </symbol>
+</svg>
+{% endblock %}
+{% block js%}
+<script type="text/javascript" src="{% static 'js/events.js'%}"></script>
+{% endblock%}

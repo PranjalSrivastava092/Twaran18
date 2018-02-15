@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+.more-pens {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 10;
+}
+
+a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-decoration: none;
+  background: #212121;
+  padding: 4px 8px;
+  color: #f7f7f7;
+}
+a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
+  background: #edf3f8;
+  color: #212121;
+}
+
+
+#particles {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  filter: url("#goo");
+}
+
+
+.background1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background-image:url("/static/img/pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  z-index: 10;
+  position: fixed;
+
+  left: 50%;
+  top: 46%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 0px;
+  }
+
+.main-text{
+
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1;
+  color: #fff;
+}
+.title h1{
+
+  font-family: "Permanent Marker", cursive;
+  color: #ddd;
+}
+
+.title h1 span {
+  
+  font-weight: 600;
+  font-size: 120px;
+  color: #ddd;
+  font-family: "Permanent Marker", cursive;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  
+}
+
+
+.title h3 {
+  font-weight: 200;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  color: #eee;
+  letter-spacing: 1px;
+}
+
+.circle {
+ fill: #ccdfff;
+ opacity: .1;
+}
+
+svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  transform: translateZ(0px);
+
+}
+
+.social{
+  z-index: 10;
+  position: fixed;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 60%;
+}
+
+.icon-button {
+  background-color: white;
+  border-radius: 3.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.0rem;
+  height: 3.6rem;
+  line-height: 3.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 3.6rem;
+}
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 0;
+}
+.icon-button:hover span {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 3.6rem;
+  margin: -1.8rem;
+}
+.youtube span {
+  background-color: #cc181e;
+}
+.facebook span {
+  background-color: #3B5998;
+}
+.google-plus span {
+  background-color: #db5a3c;
+}
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 3.6rem;
+  left: 0;
+  line-height: 3.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+  width: 3.6rem;
+  z-index: 10;
+}
+.icon-button .fa-youtube {
+  color: #cc181e;
+}
+.icon-button .fa-facebook {
+  color: #3B5998;
+}
+.icon-button .fa-google-plus {
+  color: #db5a3c;
+}
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-google-plus {
+  color: white;
+}
+.logo{
+  z-index: 10;
+  width: 60px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+}
+.mbtn{
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.mbtn1:hover{
+  background-color:#3E82F7 !important;
+  color:#FFFFFF !important;
+  transition: 0.3s;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .title {
+    left:42%;
+    text-align: left;
+  }
+  .title h1 {
+  font-size: 60px;
+}
+.title h1 span {
+  font-size: 60px;
+}
+.title h3 {
+  font-size: 30px;
+  align-self: left;
+}
+.logo{
+  width: 30px;
+  clear: all;
+}
+.mbtn{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.social{
+  left: 35%;
+}
+.main-text{
+
+  padding-left: 0;
+  padding-right: 20px;
+}
+}
+
+@media screen and (max-width: 420px){
+  .title {
+    left:42%;
+    text-align: left;
+  }
+  .title h1 {
+  font-size: 40px;
+}
+.title h1 span {
+  font-size: 40px;
+}
+.title h3 {
+  font-size: 20px;
+  align-self: left;
+}
+.logo{
+  width: 30px;
+  clear: all;
+}
+.mbtn{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.social{
+  left: 35%;
+}
+.main-text{
+
+  padding-left: 0;
+  padding-right: 20px;
+}
+}
+
+@-moz-keyframe 
+#particles {
+  display: none;
+  
+}
+
+@-moz-keyframe 
+body{
+  background-image:url("/static/img/pic.jpg");
+}
+

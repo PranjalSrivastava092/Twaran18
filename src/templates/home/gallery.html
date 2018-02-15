@@ -1,0 +1,72 @@
+
+{% extends 'home/base.html'%}
+{% load staticfiles%}
+  {% block css %}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/gallery.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/page.css' %}">
+
+  {% endblock %}  
+  {% block body %}
+ <section> 
+  <a href="#" data-activates="slide-out" class="button-collapse  right nav-btn"><i class="material-icons">dehaze</i></a>
+  <div class="grey darken-4 header"><h1 class="center heading">Gallery</h1>
+    <h3 class="center subheading">Moments that keep us alive...</h3></div>
+  </section>
+<section>
+  
+<div class="m-p-g">
+  <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+    <img src="{% static 'img/1.jpg'%}" data-full="{% static 'img/1.jpg'%}" class="m-p-g__thumbs-img" />
+    <img src="{% static 'img/2.jpg'%}" data-full="{% static 'img/2.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/3.jpg'%}" data-full="{% static 'img/3.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/4.jpg'%}" data-full="{% static 'img/4.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/5.jpg'%}" data-full="{% static 'img/5.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/6.jpg'%}" data-full="{% static 'img/6.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/7.jpg'%}" data-full="{% static 'img/7.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/8.jpg'%}" data-full="{% static 'img/8.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/9.jpg'%}" data-full="{% static 'img/9.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/10.jpg'%}" data-full="{% static 'img/10.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/11.jpg'%}" data-full="{% static 'img/11.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/121.jpg'%}" data-full="{% static 'img/121.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/pool.jpg'%}" data-full="{% static 'img/pool.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/14.jpg'%}" data-full="{% static 'img/14.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/15.jpg'%}" data-full="{% static 'img/15.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/16.jpg'%}" data-full="{% static 'img/16.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/17.jpg'%}" data-full="{% static 'img/17.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/18.jpg'%}" data-full="{% static 'img/18.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/19.jpg'%}" data-full="{% static 'img/19.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/20.jpg'%}" data-full="{% static 'img/20.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/21.jpg'%}" data-full="{% static 'img/21.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/22.jpg'%}" data-full="{% static 'img/22.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/23.jpg'%}" data-full="{% static 'img/23.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/24.jpg'%}" data-full="{% static 'img/24.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/25.jpg'%}" data-full="{% static 'img/25.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/26.jpg'%}" data-full="{% static 'img/26.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/27.jpg'%}" data-full="{% static 'img/27.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/28.jpg'%}" data-full="{% static 'img/28.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/29.jpg'%}" data-full="{% static 'img/29.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/30.jpg'%}" data-full="{% static 'img/30.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/31.jpg'%}" data-full="{% static 'img/31.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/32.jpg'%}" data-full="{% static 'img/32.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/33.jpg'%}" data-full="{% static 'img/33.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/34.jpg'%}" data-full="{% static 'img/34.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/35.jpg'%}" data-full="{% static 'img/35.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/36.jpg'%}" data-full="{% static 'img/36.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/37.jpg'%}" data-full="{% static 'img/37.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/38.jpg'%}" data-full="{% static 'img/38.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/39.jpg'%}" data-full="{% static 'img/39.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/40.jpg'%}" data-full="{% static 'img/40.jpg'%}" class="m-p-g__thumbs-img" /><img src="{% static 'img/41.jpg'%}" data-full="{% static 'img/41.jpg'%}" class="m-p-g__thumbs-img" />  
+  </div>
+
+
+  <footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Twaran 2K18</h5>
+                <p class="grey-text text-lighten-4">National Level Sports Fest Organised by ABV-IIITM Gwalior.. Twaran, Under the Flag of ABV-IIITM Gwalior offers a platform for students from all over India to exhibit their talent and compete with the best upcoming sport persons in the country..</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="{% static 'ins.pdf' %}">Instructions</a></li>
+                  <li><a class="grey-text text-lighten-3" href="{% static 'rule.pdf' %}">Rule Book</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/twaran.iiitm/">Facebook</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright | Twaran
+            <a class="grey-text text-lighten-4 right" href="#!">ABV-IIITM Gwalior</a>
+            </div>
+          </div>
+        </footer>
+
+  <div class="m-p-g__fullscreen"></div>
+</div>
+
+
+<script>
+  var elem = document.querySelector('.m-p-g');
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var gallery = new MaterialPhotoGallery(elem);
+  });
+  </script>
+</section>
+
+
+  {% endblock %}
+
+
+  {% block js %}
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/gallery.js' %}"></script>
+  {% endblock %}
+</body>
+</html>

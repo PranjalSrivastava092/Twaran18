@@ -1,0 +1,263 @@
+
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+{% load widget_tweaks %}
+{% block css %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/page.css' %}">
+
+{% endblock %}  
+{% block body %}
+<section> 
+  <a href="#" data-activates="slide-out" class="button-collapse  right nav-btn"><i class="material-icons">dehaze</i></a>
+  <div class="grey darken-4 header"><h1 class="center heading">Register</h1>
+    <h3 class="center subheading">"You don't need to be good to start...you just need to start to be good!"</h3></div>
+  </section>
+  <div class="container">
+    <section class="container">
+      <div class="row">
+        {% include "home/messages_display.html" %}
+        <form method='POST' action='' enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="row">
+            <div class="input-field col s6 required" id="id_institute_name_container">
+              {{ form.error }}
+              {% render_field form.institute_name  %}
+              <label for="id_institute_name">{{ form.institute_name.label }}</label>
+            </div>
+            <div class="input-field col s6 required" id="id_student_name_container">
+              {{ form.error }}
+              {% render_field form.student_name  %}
+              <label for="id_student_name">{{ form.student_name.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6 required" id="id_secratary_name_container">
+              {{ form.error }}
+              {% render_field form.secratary_name  %}
+              <label for="id_secratary_name">{{ form.secratary_name.label }}</label>
+            </div>
+            <div class="input-field col s6 required" id="id_incharge_name_container">
+              {{ form.error }}
+              {% render_field form.incharge_name  %}
+              <label for="id_incharge_name">{{ form.incharge_name.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_cricket_boys_container">
+              {{ form.error }}
+              {% render_field form.cricket_boys class+="filled-in" %}
+              <label for="id_cricket_boys">{{ form.cricket_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_basketball_girls_container">
+              {{ form.error }}
+              {% render_field form.basketball_girls class+="filled-in" %}
+              <label for="id_basketball_girls">{{ form.basketball_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_football_boys_container">
+              {{ form.error }}
+              {% render_field form.football_boys class+="filled-in" %}
+              <label for="id_football_boys">{{ form.football_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_volleyball_girls_container">
+              {{ form.error }}
+              {% render_field form.volleyball_girls class+="filled-in" %}
+              <label for="id_volleyball_girls">{{ form.volleyball_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_basketball_boys_container">
+              {{ form.error }}
+              {% render_field form.basketball_boys class+="filled-in" %}
+              <label for="id_basketball_boys">{{ form.basketball_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_squash_girls_container">
+              {{ form.error }}
+              {% render_field form.squash_girls class+="filled-in" %}
+              <label for="id_squash_girls">{{ form.squash_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_volleyball_boys_container">
+              {{ form.error }}
+              {% render_field form.volleyball_boys class+="filled-in" %}
+              <label for="id_volleyball_boys">{{ form.volleyball_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_lawn_tennis_container">
+              {{ form.error }}
+              {% render_field form.lawn_tennis_girls class+="filled-in" %}
+              <label for="id_lawn_tennis_girls">{{ form.lawn_tennis_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_squash_boys_container">
+              {{ form.error }}
+              {% render_field form.squash_boys class+="filled-in" %}
+              <label for="id_squash_boys">{{ form.squash_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_badminton_girls_container">
+              {{ form.error }}
+              {% render_field form.badminton_girls class+="filled-in" %}
+              <label for="id_badminton_girls">{{ form.badminton_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_lawn_tennis_boys_container">
+              {{ form.error }}
+              {% render_field form.lawn_tennis_boys class+="filled-in" %}
+              <label for="id_lawn_tennis_boys">{{ form.lawn_tennis_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_atheletics_girls_container">
+              {{ form.error }}
+              {% render_field form.atheletics_girls class+="filled-in" %}
+              <label for="id_atheletics_girls">{{ form.atheletics_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_badminton_boys_container">
+              {{ form.error }}
+              {% render_field form.badminton_boys class+="filled-in" %}
+              <label for="id_badminton_boys">{{ form.badminton_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_triathlon_girls_container">
+              {{ form.error }}
+              {% render_field form.triathlon_girls class+="filled-in" %}
+              <label for="id_triathlon_girls">{{ form.triathlon_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_atheletics_boys_container">
+              {{ form.error }}
+              {% render_field form.atheletics_boys class+="filled-in" %}
+              <label for="id_atheletics_boys">{{ form.atheletics_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_table_tennis_girls_container">
+              {{ form.error }}
+              {% render_field form.table_tennis_girls class+="filled-in" %}
+              <label for="id_table_tennis_girls">{{ form.table_tennis_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_triathlon_boys_container">
+              {{ form.error }}
+              {% render_field form.triathlon_boys class+="filled-in" %}
+              <label for="id_triathlon_boys">{{ form.triathlon_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_swimming_girls_container">
+              {{ form.error }}
+              {% render_field form.swimming_girls class+="filled-in" %}
+              <label for="id_swimming_girls">{{ form.swimming_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_table_tennis_boys_container">
+              {{ form.error }}
+              {% render_field form.table_tennis_boys class+="filled-in" %}
+              <label for="id_table_tennis_boys">{{ form.table_tennis_boys.label }}</label>
+            </div>
+            <div class="boolean-field col s6 " id="id_carrom_girls_container">
+              {{ form.error }}
+              {% render_field form.carrom_girls class+="filled-in" %}
+              <label for="id_carrom_girls">{{ form.carrom_girls.label }}</label>
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="boolean-field col s6" id="id_swimming_boys_container">
+            {{ form.error }}
+            {% render_field form.swimming_boys class+="filled-in" %}
+            <label for="id_swimming_boys">{{ form.swimming_boys.label }}</label>
+          </div>
+
+
+            <div class="boolean-field col s6 " id="id_chess_girls_container">
+              {{ form.error }}
+              {% render_field form.chess_girls class+="filled-in" %}
+              <label for="id_chess_girls">{{ form.chess_girls.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6" id="id_carrom_boys_container">
+              {{ form.error }}
+              {% render_field form.carrom_boys class+="filled-in" %}
+              <label for="id_carrom_boys">{{ form.carrom_boys.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="boolean-field col s6 " id="id_chess_boys_container">
+              {{ form.error }}
+              {% render_field form.chess_boys class+="filled-in" %}
+              <label for="id_chess_boys">{{ form.chess_boys.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6 required" id="id_email_container">
+              {{ form.error }}
+              {% render_field form.email  %}
+              <label for="id_email">{{ form.email.label }}</label>
+            </div>
+            <div class="input-field col s6 required" id="id_faculty_email_container">
+              {{ form.error }}
+              {% render_field form.faculty_email  %}
+              <label for="id_faculty_email">{{ form.faculty_email.label }}</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6 required" id="id_phone_number_container">
+              {{ form.error }}
+              {% render_field form.phone_number  %}
+              <label for="id_phone_number">{{ form.phone_number.label }}</label>
+            </div>
+            <div class="input-field col s6 required" id="id_secratary_phone_number_container">
+              {{ form.error }}
+              {% render_field form.secratary_phone_number  %}
+              <label for="id_secratary_phone_number">{{ form.secratary_phone_number.label }}</label>
+            </div>
+          </div>
+
+        </div>
+        <div class="center">
+          <input type="submit" class="btn btn-default"  name="Register" style="margin-bottom: 2em;" />
+        </div> 
+      </form>
+    </div>
+  </section>
+</div>
+
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Twaran 2K18</h5>
+        <p class="grey-text text-lighten-4">National Level Sports Fest Organised by ABV-IIITM Gwalior.. Twaran, Under the Flag of ABV-IIITM Gwalior offers a platform for students from all over India to exhibit their talent and compete with the best upcoming sport persons in the country..</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="{% static 'ins.pdf' %}">Instructions</a></li>
+          <li><a class="grey-text text-lighten-3" href="{% static 'rule.pdf' %}">Rule Book</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/twaran.iiitm/">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2018 Copyright | Twaran
+      <a class="grey-text text-lighten-4 right" href="#!">ABV-IIITM Gwalior</a>
+    </div>
+  </div>
+</footer>
+
+{% endblock %}
+
+
+{% block js %}
+<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/register.js' %}"></script>
+{% endblock %}
+</body>
+</html>

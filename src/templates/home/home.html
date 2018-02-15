@@ -1,0 +1,51 @@
+
+{% extends 'home/base.html'%}
+{% load staticfiles%}
+  {% block css %}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+  {% endblock %}  
+  {% block body %}
+   <img class="left logo" src="{% static 'img/logo.png' %}" href="iiitm.ac.in">
+  <a href="#" data-activates="slide-out" class="button-collapse  right nav-btn"><i class="material-icons">dehaze</i></a>
+  <div id="particles"></div>
+  <div class="background1"></div>
+  <div class="container">
+    <div class="title">
+      <h3>08<sup>th</sup> - 11<sup>th</sup> March</h3>
+      <h1 class="main-text">Twaran'<span>18</span></h1>
+
+      <h3>ABV-IIITM, Gwalior</h3>
+      <div><a class="waves-effect waves-light btn med white mbtn mbtn1 button-collapse"  data-activates="slide-out"  style="color:#3E82F7;"><i class="material-icons left">blur_on</i>Explore</a>    <a class="waves-effect waves-light btn med mbtn mbtn2" href="{% url 'home:register' %}" style="background-color:#3E82F7;"><i class="material-icons right">create</i>Register</a></div>
+      <h3 style="line-spacing: 2px;">"Initiate. Inculcate. Inspire."</h3>
+    </div>
+  
+  <div class="center social ">
+   <a href="https://twitter.com/twaran17" class="icon-button youtube z-depth-3"><i class="fa fa-youtube"></i><span></span></a>
+   <a href="https://www.facebook.com/twaran.iiitm/" class="icon-button facebook z-depth-3"><i class="fa fa-facebook"></i><span></span></a>
+   <a href="mailto:twaran@gmail.com" class="icon-button google-plus z-depth-3"><i class="fa fa-google-plus"></i><span></span></a>
+ </div>
+
+ <svg >
+  <defs>
+    <filter id="goo">
+      <!-- <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="1" />
+      <feColorMatrix in="blur" result="colormatrix" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" />
+      <feBlend in="SourceGraphic" in2="colormatrix" /> -->
+    </filter>
+  </defs>
+  
+</svg>
+
+
+</div>
+
+  {% endblock %}
+
+
+  {% block js %}
+
+<script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+  {% endblock %}
+</body>
+</html>

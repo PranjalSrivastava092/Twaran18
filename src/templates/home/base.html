@@ -1,0 +1,64 @@
+{% load staticfiles%}
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+{{ title}}
+  </title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coda:800|Permanent+Marker|Risque" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  {% block css %}
+  {% endblock %}
+
+</head>
+<body>
+
+
+  <a href="#" data-activates="slide-out" class="button-collapse  right nav-btn"><i class="material-icons">dehaze</i></a>
+  <ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="{% static 'img/banner.jpg'%}">
+      </div>
+      <a href="{% url 'home:about'%}"><img class="circle log1" src="/static/img/log1.png"></a>
+      <a href="#!name"><span class="white-text name">Twaran'18</span></a>
+      <a href="#!email"><span class="white-text email">Inititate. Inculcate. Inspire.</span></a>
+    </div></li>
+
+    <li><a class="waves-effect" href="{% url 'home:home'%}"><i class="material-icons">home</i>Home</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="{% url 'home:about'%}"><i class="material-icons">info_outline</i>About Us</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="{% url 'home:events'%}"><i class="material-icons">event</i>Events</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="{% url 'home:team'%}"><i class="material-icons">group</i>Our Team</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="{% url 'home:register'%}"><i class="material-icons">create</i>Register</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="{% url 'home:gallery'%}"><i class="material-icons">camera</i>Past Memories</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="{% url 'home:contact'%}"><i class="material-icons">call</i>Contact Us</a></li>
+    <li><div class="divider"></div></li>
+  </ul>
+ {% block body %}
+ 
+  {% endblock %}
+
+
+
+<script type="text/javaScript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+  {% block js %}
+ {% endblock %}
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>
